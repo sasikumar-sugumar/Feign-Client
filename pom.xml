@@ -4,12 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.athina</groupId>
-	<artifactId>eureka-server</artifactId>
+	<artifactId>spring-cloud-microservice-example-feign-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
-	<name>eureka-server</name>
-	<description>Eureka Server Implementation</description>
+      <modules>
+        <module>eureka-server</module>
+       <module>eureka-client</module>
+	     <module>feign-client</module>
+    </modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -35,7 +38,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 
 		<dependency>
