@@ -1,8 +1,9 @@
 # Feign-Client
 Feign Client Example
 
-### How to build the project ?
-mvn clean install
+## Build
+
+    mvn clean install
 
 ### Why Feign and not X?
 
