@@ -17,7 +17,7 @@ public class GraphController {
 	
 	@RequestMapping(value="/getGraphDetails",method=RequestMethod.GET)
 	public String getGraphDetails(){
-		return "";
+		return "GRAph Details";
 	}
 
 }
